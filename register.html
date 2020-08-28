@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<script type="text/javascript">
+	 function uvalidate()
+{  var un=document.getElementById("name").value;
+    var fname=document.getElementById("fname").value;
+    var lname=document.getElementById("lname").value; 
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirm").value;
+
+ re=/^[A-Z][a-z]+$/;
+ if (!re.test(fname)) {
+ 	alert("First Name must start with a capital letter");
+ 	return false; }
+ if(!re.test(lname))
+ {
+ 	alert("Last Name must start with a capital letter")
+ 	return false;  }
+
+ re2=/^[a-z][a-z0-9]{6,18}$/;
+if(!re2.test(un))
+{
+	alert("Username must contain only letters and numbers of length 6 to 18 chracters!!");
+	return false; }
+if (password != confirmPassword) 
+        {
+            alert("Passwords do not match.");
+            return false; }
+      
+re3=/[A-Za-z0-9]{6,15}/
+if(!re3.test(password))
+{
+	alert("Password must contain letters and numbers of length 6 to 15!!");
+	return false; }
+var mobileno= document.getElementById("phone").value;
+if(mobileno.length != 10)
+{ 
+	alert("Please enter valid contact number!!");
+	return false; }
+
+var age= document.getElementById("age").value;
+if(age<18)
+	{ alert("Valid registration age is 18 and above!! ");
+return false; }
+return true;  }
+</script>
+
+<head>
+	<title>REGISTER PAGE</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+ <div class="signup">
+ 	<div class="form"> <form class="signup form">
+ 		<input type="text" placeholder="first name" id="fname" name="firstname" required/>
+ 		<input type="text" placeholder="last name" id="lname" name="lastname" required/>
+ 		<input type="date" placeholder="birthday" id="dob" name="birthday" required > 
+ 		<input type="text" placeholder="age" id="age" name="age" required>
+ 		<input type="text" placeholder="username" id="name" name="username" required/>
+ 		<input type="password" id="password" placeholder="password" name="password" required />
+ 		<input type="password" id="confirm" placeholder="confirm password" name="cpassword" required/>
+                 <input type="email" placeholder="email id" id="mail" name="email" required/>
+                 <input type="text" id="phone" placeholder="contact number" name="phone" required />                                           			<button onclick="return uvalidate()">Register</button>
+ 	</form> </div>
+ </div>
+ 
+</body>
+</html>

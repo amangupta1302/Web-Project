@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<script>
+		function uvalidate()
+	{   
+
+		var un=document.getElementById("myform").elements[0].value; ;
+		 var pw=document.getElementById("myform").elements[1].value; ;
+		 
+	 re2=/^[a-z][a-z0-9]{6,18}$/;
+	if(!re2.test(un))
+	{
+		alert("Username must contain only letters and numbers of length 6 to 18 chracters!!");
+		return false; }
+	
+	re3=/[A-Za-z0-9]{6,15}/
+	if(!re3.test(pw))
+	{
+		alert("Password must contain letters and numbers of length 6 to 15!!");
+		return false;  }
+	return true;
+	}
+	</script>
+<head>
+	<title>LOGIN PAGE</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+ <div class="login">
+ 	<div class="form">  <form class="login form" name="myform" id="myform">
+ 	<input type="text" placeholder="username"/>  
+        <input type="password" placeholder="password"/>
+               <button onclick=" return uvalidate()">Login</button>
+	</form> </div>
+ </div>
+</body>
+</html>

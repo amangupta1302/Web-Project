@@ -1,0 +1,32 @@
+
+body{
+	background-image: url(login.jpg);
+	height: 95vh; width: 190vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; }
+
+.login{
+	width: 360px;  padding: 10% 0 0;  margin: auto; }
+
+.form{
+	position: relative; max-width: 360px;
+	margin: auto auto auto; padding: 35px;
+	text-align:center;  }
+
+.form input{
+	font-family: "georgia"; outline: 1;
+	background: white;  width: 100%;
+	border: 0; margin: 0 0 15px;
+	padding: 15px; 	box-sizing: border box;
+	font-size: 20px; }
+
+.form button
+           {  font-family: georgia; text-transform: uppercase;
+	outline: 0; background-color: green;
+	width: 108%; border: 0;
+     	padding: 15px;	color: black;
+	font-size: 20px; cursor: pointer; }
+
+.form button:hover, .form button:active
+{  background: gray;  }
