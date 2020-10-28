@@ -20,10 +20,12 @@ die('Connection error('. mysqli_connect_errno().')'. mysqli_connect_error());
 		$result1=mysqli_query($conn,$SELECT);
 		if(mysqli_num_rows($result1)==0)
 		{
-			echo "Invalid username or password";
+			$status=4;
+			include "home.html";
 		}
 		else{
-			echo "Login Sucessful";
+			$status=3;
+			include "home.html";
 		}
 	}
 }

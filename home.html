@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Web Programming</title>
 </head>
@@ -56,5 +57,29 @@ body {
 <li>Ace the exams</li>
 </ul>
              </div>
+             <script type="text/javascript">
+              //     function getUrlVars() {
+              //     var vars = {};
+              //     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+              //         vars[key] = value;
+              //     });
+              //     return vars;
+              // }
+              var status = "<?php echo"$status"?>";
+              if(status==0)
+                alert("New User Register");
+              if(status==1)
+                alert("Username Already Exists");
+              if (status==3)
+              {
+                alert("Logged In Sucessfully");
+                document.getElementById("login").innerHTML = "Sign Out";
+              }
+              if(status==4)
+                {
+                  alert("Invalid credentials")
+                }
+              
+                </script>
 </body>
 </html>
