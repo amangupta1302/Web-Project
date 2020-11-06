@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="book1_style.xsl"?>  
+<!-- <!DOCTYPE books SYSTEM "ext_aarushi.dtd"> -->
+<books> 
+	<book>
+		<title> Fundamentals of Physics </title>
+		<author> H.C. Verma </author>
+		<genre> Physics </genre>
+		<copyright> 2005 </copyright>
+		<edition> First </edition>
+		<isbn> 978-0786838653 </isbn>
+		<publisher> HYPERION </publisher>
+		<price> 600 </price>
+ 	</book>
+ 	<book>
+		<title> Advanced Accountancy  </title>
+		<author>  	Arulandam  </author>
+		<genre> Accountancy </genre>
+		<copyright> 2012 </copyright>
+		<edition> First </edition>
+		<isbn> 978-1406344813 </isbn>
+		<publisher> WALKER BOOKS </publisher>
+		<price> 500 </price>
+	</book>
+	<book>
+		<title> Banking Theory : Law and Practice </title>
+		<author> Gurusamy </author>
+		<genre>  Law </genre>
+		<copyright> 2012 </copyright>
+		<edition> First </edition>
+		<isbn> 978-1447208792 </isbn>
+		<publisher> PAN </publisher>
+		<price> 110 </price>
+ 	</book>
+ 	<book>
+		<title>Computer Applications in Business  </title>
+		<author> Alexis Leon </author>
+		<genre> Computer Science </genre>
+		<copyright> 2019 </copyright>
+		<edition> First </edition>
+		<isbn> 978-9389053739 </isbn>
+		<publisher> FINGERPRINT PUBLISHING </publisher>
+		<price> 120 </price>
+ 	</book>
+ 	<book>
+		<title>  	Consumer Behaviour  </title>
+		<author> Dr. L Natarajan </author>
+		<genre> ECONOMICS  </genre>
+		<copyright> 2013 </copyright>
+		<edition> First </edition>
+		<isbn> 978-1408844441 </isbn>
+		<publisher> BLOOMSBURY PAPERBACKS </publisher>
+		<price> 327 </price>
+ 	</book>
+</books>
